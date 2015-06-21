@@ -4,21 +4,25 @@
       "name" : "wandering-pillar",
       "location" : "CentrePasquart, Biel",
       "mode" : "manual",
-      "cmd" : "stop",
-      "programm" : {
+      "manCommand" : "stop",
+      "program" : {
         "loop" : "True",
         "1" : {
-          "cmd" : "fwd",
-          "distance" : "3000"
+          "cmd" : "forward",
+          "distance" : 3000,
+          "gear" : 0
         },
         "2" : {
-          "cmd" : "bwd",
-          "distance" : "3000"
+          "cmd" : "backward",
+          "distance" : 3000,
+          "gear" : 0
         }
       },
       "data" : {
         "-JAYtJyHSj0dYYBV8g-Y" :{
           "timestamp" : "2015-06-19 18:00:00",
+          "autoTimer" : 300125,
+          "autoStep" : 2,
           "batteryLevel" : 915,
           "motorRight" : {
             "rpm" : 51,
@@ -31,26 +35,6 @@
           "motorLeft" : {
             "rpm" : 50,
             "current" : 22,
-            "stop" : 0,
-            "enable" : 1,
-            "direction" : 1,
-            "gear" : 0
-          }
-        },
-        "-JAYtJyHSj0dYYBV8g-Y" :{
-          "timestamp" : "2015-06-19 18:00:10",
-          "batteryLevel" : 910,
-          "motorRight" : {
-            "rpm" : 50,
-            "current" : 20,
-            "stop" : 0,
-            "enable" : 1,
-            "direction" : 0,
-            "gear" : 0
-          },
-          "motorLeft" : {
-            "rpm" : 50,
-            "current" : 19,
             "stop" : 0,
             "enable" : 1,
             "direction" : 1,
