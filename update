@@ -3,8 +3,10 @@
 user="jonasprobst"
 repo="wandering-pillar-cli"
 
-rm -rf myprojectname
+cd ..
+rm -rf $repo
 curl -l -k https://codeload.github.com/$user/$repo/zip/master > archive.zip
 unzip archive.zip -d .
 mv $repo-master $repo
+chmod 751 $repo/update
 rm -f archive.zip
